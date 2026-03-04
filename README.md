@@ -176,7 +176,8 @@ Top-K retrieved chunks are passed as context to the LLM. The model generates ans
 }
 ```
 **Response**:
-```json{
+```json
+{
   "answer": "The adult dose of loratadine is 10 mg daily."
 }
 ```
