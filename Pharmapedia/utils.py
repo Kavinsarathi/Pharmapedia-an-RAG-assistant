@@ -1,3 +1,4 @@
+from config import model_name,base_url
 from langchain_community.chat_models import ChatOpenAI
 from langchain_core.prompts import PromptTemplate
 import os
@@ -7,7 +8,7 @@ load_dotenv()
 GLM_API = os.getenv('GLM_API_KEY')
 
 def load_model():
-    model=ChatOpenAI(model='GLM-4.7-Flash',openai_api_key=GLM_API,base_url='https://api.z.ai/api/paas/v4/')
+    model=ChatOpenAI(model=model_name,openai_api_key=GLM_API,base_url=base_url)
     return model
 
 def load_rewritten_prompt():
