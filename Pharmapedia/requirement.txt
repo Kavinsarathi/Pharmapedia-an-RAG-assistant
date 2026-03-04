@@ -1,0 +1,12 @@
+beautifulsoap4
+langchain_core
+langchain_text_splitters
+langchain_chroma
+langchain_postgres
+langchain_community
+langchain_openai
+tqdm
+fastapi
+streamlit
+
+
