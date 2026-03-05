@@ -29,7 +29,11 @@ Pharmapedia follows a modular full-stack architecture with a Streamlit frontend,
 
 The batch processing pipeline ingests FDA datasets, performs data cleaning and transformation, splits content into optimized chunks, generates embeddings, and stores them in a vector database (ChromaDB for local development and PostgreSQL with pgvector for production). This pipeline runs asynchronously and prepares the knowledge base for semantic retrieval.
 
+![Architecture Diagram](Pharmapedia/images/Batch_processing_Architecture.png)
+
 The real-time inference layer processes user queries through a Streamlit frontend and FastAPI backend. The system generates query embeddings, retrieves relevant chunks using semantic search (Top-K/MMR), and passes the context to an LLM for response generation. The final answer is returned to the user with low-latency processing.
+
+![Architecture Diagram](Pharmapedia/images/Real_time_interface_Architecture.png)
 
 # End-to-End Workflow
 
