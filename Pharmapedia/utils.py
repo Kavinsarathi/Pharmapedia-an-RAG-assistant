@@ -25,33 +25,80 @@ def load_rewritten_prompt():
 
             Allowed section values:
             spl product data elements
-            recent major changes
-            boxed warning
-            warnings and cautions
-            warnings
+            active ingredient
+            purpose
             indications and usage
+            warnings
+            do not use
+            stop use
+            pregnancy or breast feeding
+            keep out of reach of children
             dosage and administration
-            dosage forms and strengths
-            contraindications
-            adverse reactions
-            drug interactions
-            use in specific populations
-            pregnancy
-            pediatric use
-            geriatric use
-            overdosage
+            storage and handling
+            inactive ingredient
+            package label principal display panel
+            id
+            recent major changes
+            spl unclassified section
             description
             clinical pharmacology
+            contraindications
+            precautions
+            adverse reactions
+            overdosage
+            how supplied
+            when using
             mechanism of action
             pharmacokinetics
-            nonclinical toxicology
+            pharmacodynamics
+            general precautions
+            laboratory tests
+            drug interactions
             carcinogenesis and mutagenesis and impairment of fertility
-            animal pharmacology and or toxicology
-            clinical studies
-            how supplied
-            storage and handling
+            pregnancy
+            teratogenic effects
+            nursing mothers
+            pediatric use
+            geriatric use
+            questions
             information for patients
+            drug and or laboratory test interactions
+            labor and delivery
+            drug abuse and dependence
+            controlled substance
+            dependence
+            references
+            spl patient package insert
+            boxed warning
+            dosage forms and strengths
+            warnings and cautions
+            use in specific populations
+            nonclinical toxicology
+            clinical studies
+            abuse
+            instructions for use
+            ask doctor
             spl medguide
+            ask doctor or pharmacist
+            microbiology
+            other safety information
+            pharmacogenomics
+            animal pharmacology and or toxicology
+            nonteratogenic effects
+            spl indexing data elements
+            patient medication information
+            health care provider letter
+            information for owners or caregivers
+            user safety warnings
+            risks
+            safe handling warning
+            statement of identity
+            health claim
+            components
+            alarms
+            cleaning
+            disposal and waste handling
+
 
             Your task:
             Rewrite the user question into a concise, retrieval-optimized search query that aligns with these metadata fields.

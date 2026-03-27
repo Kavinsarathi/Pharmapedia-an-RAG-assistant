@@ -22,7 +22,7 @@ document = chunk_document(transformed_data)
 
 db=VectorDB()
 print("----chroma embedding started-----")
-chroma=db.exists_chroma_db(document,collection_name,persist_dir)
+chroma=db.exists_chroma_db(document,persist_dir,collection_name)
 print("----chroma embedding completed-----")
 
 print("----pgvector embedding started-----")

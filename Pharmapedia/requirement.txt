@@ -1,4 +1,4 @@
-beautifulsoap4
+beautifulsoup4
 langchain_core
 langchain_text_splitters
 langchain_chroma
@@ -8,5 +8,4 @@ langchain_openai
 tqdm
 fastapi
 streamlit
-
-
+dotenv
