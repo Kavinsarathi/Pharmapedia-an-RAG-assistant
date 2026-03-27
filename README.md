@@ -2,6 +2,8 @@
 
 Pharmapedia is a Retrieval-Augmented Generation (RAG) system built to answer pharmaceutical queries using structured drug label data from FDA. The system processes 2,000 labeled drug records containing multiple sections such as Dosage & Administration, Indications, Warnings, Contraindications, and Pharmacology.
 
+![Pharmapedia RAG Dashboard](Pharmapedia/images/Result_image_01.png)
+*Figure 1: Pharmapedia Interface showing a grounded response for Epinephrine dosage.*
 # Problem Statement
 
 Accurate pharmaceutical question answering requires strict grounding in regulatory-approved medical documentation. Large Language Models (LLMs), when used independently, are prone to hallucination and may generate unsafe or unverifiable medical responses. Official drug labeling published by the U.S. Food and Drug Administration (FDA) contains authoritative information regarding dosage, indications, contraindications, warnings, and administration guidelines. However, these documents are lengthy, complex, and not optimized for semantic search or natural language querying.
@@ -62,9 +64,10 @@ The real-time inference layer processes user queries through a Streamlit fronten
 # Core Features
 
 ## FDA-Grounded Knowledge Base
-
 Built exclusively on structured drug labeling data from the U.S. Food and Drug Administration. All responses are generated strictly from retrieved regulatory-approved content.
 
+![Detailed Clinical Query Examples](Pharmapedia/images/Result_image_02.png)
+*Figure 2: The assistant handling complex queries regarding side effects and drug-to-drug interactions.*
 ## End-to-End Data Processing Pipeline
 
 Implements a complete offline ingestion workflow:
@@ -158,9 +161,10 @@ Drug labels are pre-processed into clinically meaningful sections (e.g., Dosage,
 Each chunk stores structured metadata (jsonb) for filtering by attributes like drug name or section type. GIN indexes enable efficient metadata queries when needed.
 
 ## Retrieval-Augmented Generation (RAG)
-
 Top-K retrieved chunks are passed as context to the LLM. The model generates answers grounded strictly in retrieved FDA-approved content.
 
+![Safety Guardrails and Hallucination Prevention](Pharmapedia/images/Result_image_03.png)
+*Figure 3: Hallucination prevention - the assistant acknowledges when information (like paracetamol interaction) is not present in the local FDA context.*
 ### Key Configuration
 
 - Chunk Size: Optimized to preserve context and improve retrieval precision
